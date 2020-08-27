@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		901714F524F1416E00413BE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901714F324F1416E00413BE4 /* Main.storyboard */; };
 		901714F724F1417000413BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901714F624F1417000413BE4 /* Assets.xcassets */; };
 		901714FA24F1417000413BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901714F824F1417000413BE4 /* LaunchScreen.storyboard */; };
+		9066C3EA24F554B40011359B /* UILabelWIthInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066C3E924F554B40011359B /* UILabelWIthInputView.swift */; };
+		9066C3EC24F555200011359B /* OptionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066C3EB24F555200011359B /* OptionPicker.swift */; };
+		9066C3EF24F556E40011359B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9066C3EE24F556E40011359B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		901714F624F1417000413BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		901714F924F1417000413BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901714FB24F1417000413BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9066C3E924F554B40011359B /* UILabelWIthInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelWIthInputView.swift; sourceTree = "<group>"; };
+		9066C3EB24F555200011359B /* OptionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9066C3EF24F556E40011359B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 				901714F624F1417000413BE4 /* Assets.xcassets */,
 				901714F824F1417000413BE4 /* LaunchScreen.storyboard */,
 				901714FB24F1417000413BE4 /* Info.plist */,
+				9066C3E924F554B40011359B /* UILabelWIthInputView.swift */,
+				9066C3EB24F555200011359B /* OptionPicker.swift */,
 			);
 			path = UILabelWithInputView;
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = UILabelWithInputView;
+			packageProductDependencies = (
+				9066C3EE24F556E40011359B /* SnapKit */,
+			);
 			productName = UILabelWithInputView;
 			productReference = 901714EA24F1416E00413BE4 /* UILabelWithInputView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 901714E124F1416E00413BE4;
+			packageReferences = (
+				9066C3ED24F556E40011359B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 901714EB24F1416E00413BE4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +154,8 @@
 			files = (
 				901714F224F1416E00413BE4 /* ViewController.swift in Sources */,
 				901714EE24F1416E00413BE4 /* AppDelegate.swift in Sources */,
+				9066C3EA24F554B40011359B /* UILabelWIthInputView.swift in Sources */,
+				9066C3EC24F555200011359B /* OptionPicker.swift in Sources */,
 				901714F024F1416E00413BE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9066C3ED24F556E40011359B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9066C3EE24F556E40011359B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9066C3ED24F556E40011359B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 901714E224F1416E00413BE4 /* Project object */;
 }
